@@ -1,3 +1,6 @@
 <% @city.each do |city| %>
-  <div class="custom"><%= city.name.upcase %></div>
+<div class="custom"><%= city.name.upcase %></div>
+<% city.pictures.each do |picture| %>
+<%= image_tag picture.url %>
+<% end %>
 <% end %>
