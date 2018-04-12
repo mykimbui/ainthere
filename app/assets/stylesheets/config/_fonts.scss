@@ -1,9 +1,11 @@
-// Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@font-face {
+    font-family: 'SinkinSans';
+    src: url('/assets/fonts/SinkinSans-900XBlack.otf');
+}
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+// $body-font: "SinkinSans", "Helvetica", "sans-serif";
+// $headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,3 +16,12 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+.custom {
+   font-family: 'SinkinSans';
+   font-size: 6em;
+   line-height: 0.85em;
+   float: left;
+   padding-right: 0.3em;
+   word-wrap: break-all;
+}
