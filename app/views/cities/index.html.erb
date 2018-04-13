@@ -1,6 +1,11 @@
-<% @city.each do |city| %>
-<div class="custom"><%= city.name.upcase %></div>
-<% city.pictures.each do |picture| %>
-<%= image_tag picture.url %>
-<% end %>
-<% end %>
+  <% @city.each do |city| %>
+  <div class="custom float">
+    <%= city.name.upcase %>
+    <div class="flag float-right">
+      <%= city.flag %>
+    </div>
+  </div>
+  <% city.pictures.each do |picture| %>
+  <%= image_tag picture.url %>
+  <% end %>
+  <% end %>

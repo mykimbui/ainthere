@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'SinkinSans';
-    src: url('/assets/fonts/SinkinSans-900XBlack.otf');
+  font-family: 'SinkinSans';
+  src: url('/assets/fonts/SinkinSans-900XBlack.otf');
 }
 
 // Define fonts for body and headers
@@ -18,10 +18,16 @@
 // $my-font: "Font Name";
 
 .custom {
-   font-family: 'SinkinSans';
-   font-size: 6em;
-   line-height: 0.85em;
-   float: left;
-   padding-right: 0.3em;
-   word-wrap: break-all;
+  font-family: 'SinkinSans';
+  font-size: 8em;
+  line-height: 0.85em;
+  padding-right: 0.1em;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.flag {
+  font-size: 0.3em;
+  margin-top: -0.85em;
 }
