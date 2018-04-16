@@ -1,9 +1,63 @@
 // Specific CSS for your home-page
 .float {
-  float: left;
-  word-wrap: break-all;
+  // float: left;
+  //overflow-wrap: break-word;
+  //width: 100vw;
+  word-wrap: break-word;
+ // word-break: break-all;
 }
 
 .float-right {
   float: right;
+  word-wrap: break-word;
+}
+
+
+.drop {
+  // background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
+  // background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+  // width:1px;
+  // height:89px;
+  position: absolute;
+  // bottom:200px;
+  -webkit-animation: fall 20s linear infinite;
+  -moz-animation: fall 20s linear infinite;
+
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+  to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+  to {margin-top:900px;}
+}
+
+.blending {
+  // bottom: 0;
+  font-family: 'Bluu';
+  font-size: 20em;
+  line-height: 0.8em;
+  mix-blend-mode: multiply;
+  color: red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ontop {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.photo {
+  position: fixed;
 }

@@ -1,11 +1,26 @@
-  <% @city.each do |city| %>
-  <div class="custom float">
-    <%= city.name.upcase %>
-    <div class="flag float-right">
-      <%= city.flag %>
-    </div>
-  </div>
+<ul class="ontop hidden" id="marque">
+  <% 3.times do %>
+  <li><marquee class="blending float"><%= @city.first.name %></marquee></li>
+  <% end %>
+</ul>
+<% @city.each do |city| %>
+
+<span class="custom float city-name">
+  <%= city.name.upcase%>
+ <!--  <span class="flag float-right">
+    <%#= city.flag %>
+  </span> -->
+</span>
+
+<div class="ontop">
   <% city.pictures.each do |picture| %>
-  <%= image_tag picture.url %>
+  <div class="photo hidden" id="template">
+    <%= image_tag picture.url, class: "rain" %>
+  </div>
   <% end %>
-  <% end %>
+</div>
+
+<% end %>
+
+
+<img src="http://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/8/42269878-1-f.jpg" id="image" style="position: fixed;" />
