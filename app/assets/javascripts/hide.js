@@ -10,9 +10,3 @@ city.forEach(function(element){
     console.log("yo");
   });
 });
-
-
-
-// function myFunction() {
-//     document.getElementById("marque").classList.remove("hidden");
-// }
