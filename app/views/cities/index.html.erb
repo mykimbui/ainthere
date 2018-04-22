@@ -5,24 +5,23 @@
     <li><marquee behavior=scroll direction="left" scrollamount="<%= h.sample %>" class="blending float"><%= @city.first.name %></marquee></li>
     <% end %>
   </ul>
-  <% @city.each do |city| %>
-
-  <span class="custom float city-name">
-    <%= city.name.upcase%>
- <!--  <span class="flag float-right">
-    <%#= city.flag %>
-  </span> -->
-</span>
-
-<div class="ontop">
-  <% city.pictures.each do |picture| %>
-  <div class="photo">
-    <%= image_tag picture.url %>
-  </div>
-<!--   <div class="photo dot hidden" style="background-image: <%#= picture.url %>;"></div>
--->  <% end %>
-</div>
-<% end %>
+  <span class="swag">
+    <% @city.each do |city| %>
+    <span class="custom float city-name"><%= city.name.upcase %>
+<!--       <span class="flag">
+        <% city.flag %>
+      </span> -->
+    </span>
+    <div class="ontop">
+      <% city.pictures.each do |picture| %>
+      <div class="photo">
+        <%= image_tag picture.url %>
+      </div>
+      <!--   <div class="photo dot hidden" style="background-image: <%#= picture.url %>;"></div> -->
+      <% end %>
+    </div>
+    <% end %>
+  </span>
 </div>
 
 <div class="test">
