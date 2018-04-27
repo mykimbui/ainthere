@@ -1,18 +1,18 @@
 <div id="container">
-  <% h = [1, 3, 5] %>
-  <ul class="ontop hidden" id="marque">
-    <% 3.times do %>
-    <li><marquee behavior=scroll direction="left" scrollamount="<%= h.sample %>" class="blending float"><%= @city.first.name %></marquee></li>
-    <% end %>
-  </ul>
   <span class="swag">
-    <% @city.each do |city| %>
+    <% @city.each do |city, index| %>
     <span class="custom float city-name"><%= city.name.upcase %>
 <!--       <span class="flag">
         <% city.flag %>
       </span> -->
     </span>
-    <div class="ontop">
+    <% h = [1..5] %>
+    <ul class="ontop hidden" id="marque">
+      <% 5.times do %>
+      <li><marquee behavior=scroll direction="left" scrollamount="<%= h.sample %>" class="blending float"><%= city.name %></marquee></li>
+      <% end %>
+    </ul>
+    <div class="ontop" id="city-{#index}">
       <% city.pictures.each do |picture| %>
       <div class="photo">
         <%= image_tag picture.url %>
@@ -22,8 +22,4 @@
     </div>
     <% end %>
   </span>
-</div>
-
-<div class="test">
-  <%= @city.first.name %>
 </div>
