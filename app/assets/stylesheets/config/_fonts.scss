@@ -4,9 +4,29 @@
 }
 
 @font-face {
-  font-family: 'Sport';
-  src: url(SportingGrotesque-Bold.otf);
+    font-family: 'Sporting Grotesque_Regular';
+    src:    url('Regular/Sporting_Grotesque-Regular_web.eot');
+    src:    url('Regular/Sporting_Grotesque-Regular_web.eot?#iefix') format('embedded-opentype'),
+            url('Regular/Sporting_Grotesque-Regular_web.woff') format('woff'),
+            url('Regular/Sporting_Grotesque-Regular_web.woff2') format('woff2'),
+            url('Regular/Sporting_Grotesque-Regular_web.ttf') format('truetype'),
+            url('Regular/Sporting_Grotesque-Regular_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Sporting Grotesque_Bold';
+    src:    url('Bold/Sporting_Grotesque-Bold_web.eot');
+    src:    url('Bold/Sporting_Grotesque-Bold_web.eot?#iefix') format('embedded-opentype'),
+            url('Bold/Sporting_Grotesque-Bold_web.woff') format('woff'),
+            url('Bold/Sporting_Grotesque-Bold_web.woff2') format('woff2'),
+            url('Bold/Sporting_Grotesque-Bold_web.ttf') format('truetype'),
+            url('Bold/Sporting_Grotesque-Bold_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Bluu';
@@ -29,7 +49,7 @@
 // $my-font: "Font Name";
 
 .custom {
-  font-family: 'Sport';
+  font-family: 'Sporting Grotesque_Bold';
   font-size: 5.5em;
   //line-height: 0.85em;
   //padding-right: 0.1em;
@@ -50,7 +70,7 @@
 }
 
 .title {
-  font-family: 'Sport';
+  font-family: 'Sporting Grotesque_Bold';
   font-size: 5.5em;
   color: red;
 }

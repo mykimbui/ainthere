@@ -1,22 +1,28 @@
+
+
+
 <div id="container">
-  <ul class="float cities_list">
-    <li class="title lined">ATRAVELDIARYINIPHONEPICTURES</li>
-    <% @city.each do |city| %>
-    <!-- <ul class="ontop hidden" id="marque">
-      <%# 5.times do %>
-      <li class="blend lined"><%#= city.name %></li>
-      <%# end %>
-      <div class="bg"></div>
-    </ul> -->
-    <li class="lined flag"><%= city.flag %></li>
-    <li class="custom lined city-name"><%= city.name.upcase %></li>
-    <div class="ontop hidden">
+  <span class="float">
+    <% @city.each do |city, index| %>
+    <span class="custom lined city-name"><%= city.name.upcase %>
+<!--       <span class="flag">
+        <% city.flag %>
+      </span> -->
+    </span>
+    <% h = [1..5] %>
+    <ul class="ontop hidden" id="marque">
+      <% 5.times do %>
+      <li><marquee behavior=scroll direction="left" scrollamount="<%= h.sample %>" class="blending float"><%= city.name %></marquee></li>
+      <% end %>
+    </ul>
+    <div class="ontop" id="city-{#index}">
       <% city.pictures.each do |picture| %>
       <div class="photo">
         <%= image_tag picture.url %>
       </div>
+      <!--   <div class="photo dot hidden" style="background-image: <%#= picture.url %>;"></div> -->
       <% end %>
     </div>
     <% end %>
-  </ul>
+  </span>
 </div>
