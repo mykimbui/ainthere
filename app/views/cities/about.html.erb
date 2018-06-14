@@ -1,6 +1,6 @@
 <div id="container">
   <ul class="float cities_list">
-    <li class="title lined">ATRAVELDIARYONIPHONEPICTURES_</li>
+    <li class="title lined">ATRAVELDIARYINIPHONEPICTURES</li>
     <% @city.each do |city| %>
     <!-- <ul class="ontop hidden" id="marque">
       <%# 5.times do %>
@@ -8,6 +8,7 @@
       <%# end %>
       <div class="bg"></div>
     </ul> -->
+    <li class="lined flag"><%= city.flag %></li>
     <li class="custom lined city-name"><%= city.name.upcase %></li>
     <div class="ontop hidden">
       <% city.pictures.each do |picture| %>

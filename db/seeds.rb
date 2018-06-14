@@ -29,7 +29,7 @@ City.create(name: 'London', flag: '🇬🇧')
 City.create(name: 'Copenhagen', flag: '🇩🇰')
 City.create(name: 'Macao', flag: '🇲🇴')
 City.create(name: 'Osaka', flag: '🇯🇵')
-City.create(name: 'Krakow', flag: '')
+City.create(name: 'Krakow', flag: '🇵🇱')
 
 
 Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 1)

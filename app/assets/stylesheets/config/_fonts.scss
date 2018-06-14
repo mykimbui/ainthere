@@ -35,7 +35,7 @@
   //padding-right: 0.1em;
   color: #f3f3f3;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: red;
   // white-space: nowrap;
   &:hover {
     color: red;
@@ -45,8 +45,8 @@
 }
 
 .flag {
-  font-size: 0.3em;
-  margin-top: -1.15em;
+  font-size: 2.2em;
+  vertical-align: top;
 }
 
 .title {
