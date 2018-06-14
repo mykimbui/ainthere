@@ -1,0 +1,21 @@
+<div id="container">
+  <ul class="float cities_list">
+    <li class="title lined">ATRAVELDIARYONIPHONEPICTURES_</li>
+    <% @city.each do |city| %>
+    <!-- <ul class="ontop hidden" id="marque">
+      <%# 5.times do %>
+      <li class="blend lined"><%#= city.name %></li>
+      <%# end %>
+      <div class="bg"></div>
+    </ul> -->
+    <li class="custom lined city-name"><%= city.name.upcase %></li>
+    <div class="ontop hidden">
+      <% city.pictures.each do |picture| %>
+      <div class="photo">
+        <%= image_tag picture.url %>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </ul>
+</div>

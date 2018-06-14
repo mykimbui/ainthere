@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function drop(e){
 
     var a = TweenMax.to(e,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
-    var b = TweenMax.to(e,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+    // var b = TweenMax.to(e,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
     var c = TweenMax.to(e,R(2,8),{rotationX:R(0,180),rotationY:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
 
     e.addEventListener('mouseenter', function() {
