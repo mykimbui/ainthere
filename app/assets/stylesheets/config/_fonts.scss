@@ -28,6 +28,18 @@
 //   src: font-url(BluuNext-Bold.otf);
 // }
 
+@media only screen and (max-device-width: 480px) {
+  .custom {
+    font-size: 2.6em !important;
+   }
+  .title {
+    font-size: 2.6em !important;
+  }
+  .flag {
+    font-size: 1.6em !important;
+  }
+}
+
 .custom {
   font-family: 'Sporting Grotesque_Bold';
   font-size: 5.5em;
