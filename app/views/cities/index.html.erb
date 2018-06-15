@@ -9,7 +9,7 @@
       <div class="bg"></div>
     </ul> -->
     <li class="lined flag"><%= city.flag %></li>
-    <li class="custom lined city-name"><%= city.name.upcase %></li>
+    <li class="custom lined city-name inner"><%= city.name.upcase %><%= image_tag city.pictures.first.url, class: "hidden hovering"%></li>
     <div class="ontop hidden">
       <% city.pictures.each do |picture| %>
       <div class="photo">

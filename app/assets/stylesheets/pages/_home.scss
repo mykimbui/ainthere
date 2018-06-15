@@ -1,13 +1,6 @@
-// Specific CSS for your home-page
 .float {
-  // float: left;
-  //overflow-wrap: break-word;
-  //width: 100vw;
-  // word-wrap: break-word;
- // word-break: break-all;
  display: inline-block;
  word-break: break-all;
- // display: inline-block;
 }
 
 .lined {
@@ -19,15 +12,7 @@
   top: 0;
 }
 
-.swag {
-  display: inline-block;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  // word-break: break-word;
-}
-
 .blending {
-  // bottom: 0;
   font-family: 'Bluu';
   font-size: 20em;
   line-height: 0.8em;
@@ -69,12 +54,25 @@ ul {
 }
 
 .hidden {
-    display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 .photo {
   position: fixed;
 }
 
+.hovering {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+// .inner:hover .hovering {
+//   display: block;
+//   z-index: -1;
+// }
 
