@@ -1,13 +1,7 @@
 <div id="container">
   <ul class="float cities_list">
     <li class="title lined">ATRAVELDIARYINIPHONEPICTURES</li>
-    <% @city.each do |city| %>
-    <!-- <ul class="ontop hidden" id="marque">
-      <%# 5.times do %>
-      <li class="blend lined"><%#= city.name %></li>
-      <%# end %>
-      <div class="bg"></div>
-    </ul> -->
+    <% @city.each do |city, index| %>
     <li class="lined flag"><%= city.flag %></li>
     <li class="custom lined city-name inner"><%= city.name.upcase %><%= image_tag city.pictures.first.url, class: "hidden hovering"%></li>
     <div class="ontop hidden">
@@ -20,3 +14,20 @@
     <% end %>
   </ul>
 </div>
+
+
+
+    <!-- <ul class="ontop hidden" id="marque">
+      <%# 5.times do %>
+      <li class="blend lined"><%#= city.name %></li>
+      <%# end %>
+      <div class="bg"></div>
+    </ul> -->
+
+
+    <% @city.each do |city, index| %>
+      <%= city.name.upcase %>
+      <% city.pictures.each do |picture| %>
+        <%= image_tag picture.url %>
+      <% end %>
+    <% end %>
