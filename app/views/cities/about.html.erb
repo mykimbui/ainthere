@@ -23,3 +23,11 @@
     <% end %>
   </span>
 </div>
+
+
+    <% @city.each do |city, index| %>
+      <%= city.name.upcase %>
+      <% city.pictures.each do |picture| %>
+        <%= image_tag picture.url %>
+      <% end %>
+    <% end %>

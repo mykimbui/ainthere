@@ -55,4 +55,9 @@ Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 17)
 Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 18)
 Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 19)
 Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 20)
+Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 21)
+Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 22)
+Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 23)
+Picture.create(url: 'http://via.placeholder.com/350x550', city_id: 24)
+
 
