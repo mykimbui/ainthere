@@ -3,7 +3,7 @@ var pic = document.querySelectorAll('.hovering');
 
 city.forEach(function(element){
   element.addEventListener('mouseover',function(element){
-    console.log("im hoverin");
+    // console.log("im hoverin");
     element.target.style.color = "red";
     pic.forEach(function(element){
       element.classList.remove("hidden");

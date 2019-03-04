@@ -1,28 +1,21 @@
 <div id="container">
   <ul class="float cities_list">
     <li class="title lined">ATRAVELDIARYINIPHONEPICTURES</li>
-    <% @city.each do |city, index| %>
+    <% @city.each do |city| %>
     <li class="lined flag"><%= city.flag %></li>
-    <li class="custom lined city-name inner"><%= city.name.upcase %><%#= image_tag city.pictures.first.url, class: "hidden hovering"%></li>
-    <div class="ontop hidden">
+    <li class="custom lined city-name inner" id="<%= city.name.downcase %>">
+      <%= city.name.upcase %>
+    </li>
+    <div class="ontop hidden eachcity">
       <% city.pictures.each do |picture| %>
       <div class="photo">
-        <%= image_tag picture.url %>
+        <%= image_tag picture.url, class: "#{city.name.downcase}" %>
       </div>
       <% end %>
     </div>
     <% end %>
   </ul>
 </div>
-
-
-
-    <!-- <ul class="ontop hidden" id="marque">
-      <%# 5.times do %>
-      <li class="blend lined"><%#= city.name %></li>
-      <%# end %>
-      <div class="bg"></div>
-    </ul> -->
 
 
 

@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     e.addEventListener('mouseenter', function() {
       a.pause();
-      b.pause();
+      // b.pause();
       c.pause();
     });
 
     e.addEventListener('mouseleave', function() {
       a.play();
-      b.play();
+      // b.play();
       c.play();
     });
 

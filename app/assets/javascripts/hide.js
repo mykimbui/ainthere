@@ -1,13 +1,15 @@
-var photo = document.querySelectorAll('.photo');
-var city = document.querySelectorAll('.city-name');
+var cities = document.querySelectorAll('.city-name');
 
-city.forEach(function(element){
-  element.addEventListener('click',function(){
+cities.forEach(function(city){
+  city.addEventListener('click',function(){
     // document.getElementById("marque").classList.toggle("hidden");
-    photo.forEach(function(element){
-      element.classList.toggle("hidden");
+    // console.log(element.id)
+    var photos = document.querySelectorAll('.' + city.id);
+
+    photos.forEach(function(photo){
+      console.log(photo)
+      photo.parentNode.classList.toggle("hidden");
     });
-    console.log("yo");
   });
 });
 
