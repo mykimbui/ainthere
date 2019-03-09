@@ -7,13 +7,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var total = imgs.length;
   var container = document.getElementById("container"), w = window.innerWidth , h = window.innerHeight;
+  var cities = document.querySelectorAll('.city-name')
 
-  for (i=0; i<total; i++){
-    var n = imgs[i];
-    TweenLite.set(n,{attr:{class:'dot hidden'},x:R(0,w),y:R(-200,-150),z:R(-200,200)});
-    container.appendChild(n);
-    drop(n);
-  }
+  // cities.forEach( function(city) {
+  //   city.addEventListener('click', function() {
+      for (i=0; i<total; i++){
+        var n = imgs[i];
+        TweenLite.set(n,{attr:{class:'dot hidden'},x:R(0,w),y:R(-200,-150),z:R(-200,200)});
+        container.appendChild(n);
+        drop(n);
+      }
+  //   })
+  // })
+
 
   function drop(e){
 

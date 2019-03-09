@@ -1,23 +1,4 @@
-// window.onLoad = Prep();
-// const citiesName = document.querySelectorAll('.city-name');
-// const images = document.querySelectorAll('.data-images');
-
-// city.forEach(function(element){
-//   element.addEventListener('click',function(){
-//     // document.getElementById("marque").classList.toggle("hidden");
-//     // const images = this.querySelectorAll('.photo');
-//     images.forEach(function(element){
-//       element.classList.toggle("hidden");
-//     });
-//   });
-// });
-// citiesName.forEach(function(city) {
-//   const imagesList = document.querySelector(".data-images")
-//   city.addEventListener('click', function(event) {
-//     event.preventDefault()
-//     prep(imagesList)
-//   })
-// })
+document.addEventListener("DOMContentLoaded", function(event) {
 
 function prep(images){
 
@@ -28,15 +9,14 @@ function prep(images){
   windowWidth = window.innerWidth;
 
   for (var i = 0; i < images.length; i++) {
-    console.log(images[i]);
+    // console.log(images[i]);
     const imageElement = images[i];
+    const imageHeight = imageElement.clientHeight;
+    const imageWidth = imageElement.clientWidth;
+
+    const availSpaceV = windowHeight - imageHeight;
+    const availSpaceH = windowWidth - imageWidth;
   };
-
-  imageHeight = imageElement.clientHeight;
-  imageWidth = imageElement.clientWidth;
-
-  availSpaceV = windowHeight - imageHeight;
-  availSpaceH = windowWidth - imageWidth;
 
   var changeInterval = 3000;
   setInterval(moveImage, changeInterval);
@@ -50,4 +30,4 @@ function moveImage(){
   imageElement.style.left = randNumH + "px";
 }
 
-
+});

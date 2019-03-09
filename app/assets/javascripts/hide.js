@@ -1,47 +1,30 @@
-var cities = document.querySelectorAll('.city-name');
+var cities = document.querySelectorAll('.city-name')
 
 cities.forEach(function(city){
   city.addEventListener('click',function(){
-    // document.getElementById("marque").classList.toggle("hidden");
-    // console.log(element.id)
-    var photos = document.querySelectorAll('.' + city.id);
+    var photos = document.querySelectorAll('.' + city.id)
 
     photos.forEach(function(photo){
-      console.log(photo)
-      photo.parentNode.classList.toggle("hidden");
-    });
-  });
-});
+      photo.parentNode.classList.toggle('hidden')
+    })
+  })
+})
 
+function switchCity(city, photo) {
 
-// for (var i = 0, total = city.length; i < total; i++) {
-//   (function(index){
-//     city[i].onclick = function(){
-//       alert(index)  ;
-//     }
-//   })(i);
-// }
+  var photos = document.querySelectorAll('photo');
+  var i;
+  for (i = 0; i < x.length; i++) {
+    photos[i].style.display = 'none';
+  }
 
+  document.getElementById(photo).style.display = 'block';
 
-// for (var i = 0, total = city.length; i < total; i++) {
-//   (function(index){
-//     city[i].onclick = function(){
-//       document.getElementById("marque").classList.toggle("hidden");
-
-//       photo.forEach(function(element){
-//         element.classList.toggle("hidden");
-//       });
-//       console.log(index);
-//     }
-//   })(i);
-// }
-
-
-
-
-
-
-
-
-
-
+  // now we get all tab menu items by class names (use the next code only if you need to highlight current tab)
+  // var x = document.getElementsByClassName("tabmenu");
+  // var i;
+  // for (i = 0; i < x.length; i++) {
+  //   x[i].className = 'tabmenu';
+  // }
+  // document.getElementById(rudr_tab_id).className = 'tabmenu active';
+}
