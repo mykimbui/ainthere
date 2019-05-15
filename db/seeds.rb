@@ -49,7 +49,7 @@ Picture.create(url: 'seoul/seoul4.jpg', city_id: b.id)
 Picture.create(url: 'seoul/seoul5.jpg', city_id: b.id)
 
 Picture.create(url: 'hongkong/hongkong0.jpg', city_id: c.id)
-Picture.create(url: 'hongkong/hongkong1.m4v', city_id: c.id)
+Picture.create(url: 'hongkong/hongkong1.mp4', city_id: c.id)
 Picture.create(url: 'hongkong/hongkong2.jpg', city_id: c.id)
 Picture.create(url: 'hongkong/hongkong3.jpg', city_id: c.id)
 Picture.create(url: 'hongkong/hongkong4.jpg', city_id: c.id)
